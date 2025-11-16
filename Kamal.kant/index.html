@@ -1,0 +1,2928 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUGPE - Transform Your Business Today</title>
+  <meta name="description" content="YUGPE provides innovative business solutions including recharge services, cashback programs, and digital products for modern enterprises.">
+  <meta name="keywords" content="business solutions, recharge, cashback, digital products, YUGPE"><!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet"><!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="https://sdk.canva.com/element_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-orange: #F85503;
+            --secondary-navy: #0B2545;
+            --white: #FFFFFF;
+            --light-gray: #F7F8FA;
+            --gradient-orange: linear-gradient(135deg, #F85503 0%, #FFB347 100%);
+            --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
+            --shadow-heavy: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--white);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 800;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: var(--white) !important;
+            box-shadow: var(--shadow-light);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            z-index: 1030;
+        }
+
+        .navbar.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: var(--shadow-medium);
+        }
+
+        /* Body padding to account for fixed navbar */
+        body {
+            padding-top: 80px;
+        }
+
+        .navbar-brand {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--primary-orange) !important;
+        }
+
+        .logo-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: 600;
+            color: var(--secondary-navy) !important;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+            display: block !important;
+            padding: 0.5rem 1rem !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-orange) !important;
+        }
+
+        .navbar-nav {
+            display: flex !important;
+            flex-direction: row !important;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-nav {
+                flex-direction: column !important;
+                width: 100%;
+            }
+            
+            .navbar-nav .nav-link {
+                padding: 0.75rem 1rem !important;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+        }
+
+        .btn-primary {
+            background: var(--gradient-orange);
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-light);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+            background: var(--gradient-orange);
+        }
+
+        .btn-outline-primary {
+            border: 2px solid var(--primary-orange);
+            color: var(--primary-orange);
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+
+        .btn-outline-primary:hover {
+            background: var(--primary-orange);
+            border-color: var(--primary-orange);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: var(--gradient-orange);
+            color: var(--white);
+            padding: 6rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="rgba(255,255,255,0.1)" points="0,1000 1000,800 1000,1000"/></svg>');
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+        
+
+
+/* Base Buttons */
+.btn-main, .btn-line {
+  padding: 12px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: .3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* MAIN BUTTON */
+.btn-main {
+  background: #ffffff;
+  color: #ff6601;
+  border: 1px solid #fff700
+  
+}
+.btn-main:hover {
+  background: #ff6a21;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(248,87,3,.35);
+  border: 1px solid #ffffff;
+}
+
+/* Gradient Swipe on Hover */
+.btn-main::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.25), rgba(255,255,255,0));
+  transition: .4s ease;
+}
+.btn-main:hover::before {
+  left: 100%;
+}
+
+/* OUTLINE BUTTON */
+.btn-line {
+  border: 1px solid #ffffff;
+  color: #fffdfc;
+  
+}
+
+/* Underline Animation */
+.btn-line::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  bottom: 8px;
+  background: #f8f403;
+  transform: translateX(-50%);
+  transition: .3s ease;
+  
+}
+.btn-line:hover::after {
+  width: 60%;
+}
+
+.btn-line:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(248,87,3,.25);
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .hero-btns {
+    flex-direction: column;
+  }
+  .hero-btns a {
+    text-align: center;
+  }
+}
+
+
+
+
+
+        /* Cards */
+        .card {
+            border: none;
+            border-radius: 16px;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--white);
+            height: 100%;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: var(--white);
+        }
+
+        /* Sections */
+        .section {
+            padding: 6rem 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--secondary-navy);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        /* How It Works */
+        .step-card {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--white);
+        }
+
+        /* Product Card Main Style */
+.product-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+
+/* Card Hover Effect */
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+/* Image Container */
+.product-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Style */
+.product-img {
+    width: 400px;
+    height:390px;
+    object-fit: cover;
+    transition: 0.4s ease;
+    
+}
+
+/* Image Hover Zoom */
+.product-card:hover .product-img {
+    transform: scale(1.08);
+}
+
+/* Title Styling */
+.product-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0B2545;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+/* Price Styling */
+.product-price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 1rem;
+    color: #F85503;
+    margin-bottom: 5px;
+}
+
+/* Button Style */
+.btn-primary {
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.btn-outline-primary {
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.product-subtitle {
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+}
+.product-info {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-orange);
+            margin-bottom: 1rem;
+        }
+
+        /* Manager Profiles */
+        .manager-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--white);
+        }
+
+        .manager-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--light-gray);
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary-orange);
+        }
+
+        .manager-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--secondary-navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .manager-role {
+            color: var(--primary-orange);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Testimonials */
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            height: 100%;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--secondary-navy);
+        }
+
+        .stars {
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--secondary-navy);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer h5 {
+            color: var(--primary-orange);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--primary-orange);
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-orange);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-2px);
+            background: var(--white);
+            color: var(--primary-orange);
+        }
+
+        /* Page Navigation */
+        .page-nav {
+            background: var(--light-gray);
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .page-nav .btn {
+            margin: 0.25rem;
+            border-radius: 8px;
+        }
+
+        .page-nav .btn.active {
+            background: var(--primary-orange);
+            border-color: var(--primary-orange);
+            color: var(--white);
+        }
+
+        /* Page Content */
+        .page-content {
+            min-height: 60vh;
+            padding: 2rem 0;
+        }
+
+        .page-header {
+            background: var(--gradient-orange);
+            color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        /* Forms */
+        .form-control {
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            padding: 0.75rem 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-orange);
+            box-shadow: 0 0 0 0.2rem rgba(248, 85, 3, 0.25);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Hero Carousel */
+        .hero-slide {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .hero-slide svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .carousel-indicators {
+            bottom: -50px;
+        }
+
+        .carousel-indicators button {
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        .carousel-indicators button.active {
+            background-color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .hero-section {
+                padding: 4rem 0 3rem;
+            }
+            
+            .page-header {
+                padding: 2rem 0;
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+            .subtitle {
+                margin-bottom: 1rem;
+                margin-top: 0.5rem;
+                color: #e9ecef;
+                size: 24px;
+            }
+        }
+
+        /* Page-specific styles */
+        .hidden {
+            display: none !important;
+        }
+
+        .document-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .document-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .document-icon {
+            font-size: 3rem;
+            color: var(--primary-orange);
+            margin-bottom: 1rem;
+        }
+
+        .job-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            border-left: 4px solid var(--primary-orange);
+        }
+
+        .modal-content {
+            border-radius: 16px;
+            border: none;
+        }
+
+        .modal-header {
+            background: var(--gradient-orange);
+            color: var(--white);
+            border-radius: 16px 16px 0 0;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-orange);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+        }
+
+        .timeline-content {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-light);
+            width: 45%;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-content {
+                width: calc(100% - 60px);
+                margin-left: 60px !important;
+                margin-right: 0 !important;
+            }
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body><!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+   <div class="container"><a class="navbar-brand d-flex align-items-center" href="#" onclick="showPage('home')">
+     <div class="logo-placeholder me-2">
+      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="var(--primary-orange)" /> <path d="M12 28V12L20 16L28 12V28L20 24L12 28Z" fill="white" />
+      </svg>
+     </div> YUGPE </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav mx-auto">
+      <li class="nav-item" style="display: block !important; visibility: visible !important;"><a class="nav-link" href="#" onclick="showPage('home')">Home</a></li>
+      <li class="nav-item" style="display: block !important; visibility: visible !important;"><a class="nav-link" href="#" onclick="showPage('about')">About</a></li>
+      <li class="nav-item" style="display: block !important; visibility: visible !important;"><a class="nav-link" href="#" onclick="showPage('docs')">Legal Docs</a></li>
+      <li class="nav-item" style="display: block !important; visibility: visible !important;"><a class="nav-link" href="#" onclick="showPage('managers')">Management</a></li>
+      <li class="nav-item" style="display: block !important; visibility: visible !important;"><a class="nav-link" href="#" onclick="showPage('business')">Business</a></li>
+      <li class="nav-item" style="display: block !important; visibility: visible !important;"><a class="nav-link" href="#" onclick="showPage('products')">Products</a></li>
+      <li class="nav-item" style="display: block !important; visibility: visible !important;"><a class="nav-link" href="#" onclick="showPage('testimonials')">Testimonials</a></li>
+      <li class="nav-item" style="display: block !important; visibility: visible !important;"><a class="nav-link" href="#" onclick="showPage('careers')">Careers</a></li>
+      <li class="nav-item" style="display: block !important; visibility: visible !important;"><a class="nav-link" href="#" onclick="showPage('contact')">Contact</a></li>
+     </ul>
+     
+    </div>
+   </div>
+  </nav><!-- Home Page -->
+  <div id="home-page" class="page"><!-- Hero Section -->
+   <section class="hero-section">
+    <div class="container">
+     <div class="row align-items-center">
+      <div class="col-lg-6">
+       <div class="hero-content animate-fade-in">
+        <h1 class="hero-title">Transform Your Business Today</h1>
+        <p class="hero-subtitle">YUGPE is designed to empower individuals and businesses with smart digital tools, seamless payments, and powerful earning opportunities. Whether you're managing recharges, growing your referral network, or expanding your digital services, YUGPE gives you the platform to work faster, earn smarter, and scale your business effortlessly.</p>
+        <div class="row">
+        <div class="row hero-buttons"><button class="btn btn-main" onclick="showPage('register')" style="display: block !important; visibility: visible !important;">Get Started</button> <button class="btn btn-line" onclick="showPage('login')" style="display: block !important; visibility: visible !important;">Login</button>
+        </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-6">
+       <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators"><button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button> <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button> <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+         <div class="carousel-item active">
+          <div class="hero-slide">
+           <img src="img/hero-img-2.png" alt="Ayurvedic product 2" width="600" height="400" onerror="this.style.display='none'; this.parentNode.querySelector('.fallback').style.display='flex'">
+           <h5 class="text-white mt-3">Ayurvedic</h5>
+          </div>
+         </div>
+         <div class="carousel-item">
+          <div class="hero-slide">
+           <img src="img/hero-img-1.png" alt="Recharge and Bills" width="600" height="400" onerror="this.style.display='none'; this.parentNode.querySelector('.fallback').style.display='flex'">
+           <h5 class="text-white mt-3">Services</h5>
+          </div>
+         </div>
+         <div class="carousel-item">
+          <div class="hero-slide">
+           <img src="img/hero-img-3.png" alt="Recharge and Bills" width="600" height="400" onerror="this.style.display='none'; this.parentNode.querySelector('.fallback').style.display='flex'">
+           <h5 class="text-white mt-3">Download App</h5>
+          </div>
+         </div>
+         <div class="carousel-item">
+          <div class="hero-slide">
+           <img src="img/hero-img-4.png" alt="Recharge and Bills" width="600" height="400" onerror="this.style.display='none'; this.parentNode.querySelector('.fallback').style.display='flex'">
+           <h5 class="text-white mt-3">Team Collaboration</h5>
+          </div>
+         </div>
+        </div><button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span> </button> <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"> <span class="carousel-control-next-icon"></span> </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Features Section -->
+   <section class="section">
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card feature-card">
+        <div class="feature-icon"><i class="fas fa-mobile-alt"></i>
+        </div>
+        <h4>Mobile Recharge</h4>
+        <p>Enjoy quick, secure mobile recharge services for all major operators</p>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card feature-card">
+        <div class="feature-icon"><i class="fas fa-coins"></i>
+        </div>
+        <h4>Cashback Rewards</h4>
+        <p>Earn attractive cashback on every transaction — with up to 8% cashback guaranteed.</p>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card feature-card">
+        <div class="feature-icon"><i class="fas fa-chart-line"></i>
+        </div>
+        <h4>Income Generation</h4>
+        <p>Multiple income streams — with 18 powerful ways to earn and accelerate your financial growth.</p>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card feature-card">
+        <div class="feature-icon"><i class="fas fa-headset"></i>
+        </div>
+        <h4>24/7 Support</h4>
+        <p>24×7 dedicated customer support for all your needs — anytime, anywhere.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- How It Works -->
+   <section class="section" style="background: var(--light-gray);">
+    <div class="container">
+     <h2 class="section-title">How It Works</h2>
+     <p class="section-subtitle">Get started in three simple steps</p>
+     <div class="row">
+      <div class="col-lg-4 mb-4">
+       <div class="step-card">
+        <div class="step-number">
+         1
+        </div>
+        <h4>Sign Up</h4>
+        <p>Create your account in minutes with basic information</p>
+       </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+       <div class="step-card">
+        <div class="step-number">
+         2
+        </div>
+        <h4>Choose Services</h4>
+        <p>Select from our wide range of business solutions</p>
+       </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+       <div class="step-card">
+        <div class="step-number">
+         3
+        </div>
+        <h4>Start Earning</h4>
+        <p>Begin generating income through our platform</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Products Highlight -->
+   <section class="section">
+    <div class="container">
+     <h2 class="section-title">AushadhiPro – Pure Ayurvedic Wellness</h2>
+     <p class="section-subtitle">Experience true healing with the power of pure herbs. AushadhiPro brings you safe, effective, and holistic wellness for a healthier life.</p>
+     <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card product-card">
+            <div class="product-image">
+               <img src="img/artho care.png" alt="AushadhiPro Wellness" class="product-img">
+            </div>
+
+            <div class="product-info">
+                <h4 class="product-title">Artho Care</h4>
+                <p class="product-subtitle">Artho Care – Natural relief for stronger, healthier joints.</p>
+
+                <div class="product-price">
+                    ₹ 699.00
+                 </div>
+
+                    <div class="d-flex gap-2">
+                       <button class="btn btn-outline-primary flex-fill" onclick="showPage('products')">View Details</button>
+                       <button class="btn btn-primary flex-fill">Buy Now</button>
+                    </div>
+             </div>
+         </div>
+      </div>
+        <div class="col-lg-4 mb-4">
+        <div class="card product-card">
+            <div class="product-image">
+               <img src="img/digestion care.png" alt="AushadhiPro Wellness" class="product-img">
+            </div>
+
+            <div class="product-info">
+                <h4 class="product-title">Digestion Care</h4>
+                <p class="product-subtitle">Boost your gut health, boost your energy — with Digestion Care.</p>
+
+                <div class="product-price">
+                    ₹ 699.00
+                 </div>
+
+                    <div class="d-flex gap-2">
+                       <button class="btn btn-outline-primary flex-fill" onclick="showPage('products')">View Details</button>
+                       <button class="btn btn-primary flex-fill">Buy Now</button>
+                    </div>
+             </div>
+         </div>
+        </div>
+         <div class="col-lg-4 mb-4">
+        <div class="card product-card">
+            <div class="product-image">
+               <img src="img/Diabetes Care.png" alt="AushadhiPro Wellness" class="product-img">
+            </div>
+
+            <div class="product-info">
+                <h4 class="product-title">Diabetes Care</h4>
+                <p class="product-subtitle">Manage sugar. Improve wellness. Live healthier — with Diabetes Care.</p>
+
+                <div class="product-price">
+                    ₹ 699.00
+                 </div>
+
+                    <div class="d-flex gap-2">
+                       <button class="btn btn-outline-primary flex-fill" onclick="showPage('products')">View Details</button>
+                       <button class="btn btn-primary flex-fill">Buy Now</button>
+                    </div>
+             </div>
+         </div>
+      
+     </div>
+    </div>
+   </section><!-- Manager Spotlight -->
+   <section class="section" style="background: var(--light-gray);">
+    <div class="container">
+     <h2 class="section-title">Meet Our Management</h2>
+     <p class="section-subtitle">Experienced professionals driving our success</p>
+     <div class="row">
+      <div class="col-lg-4 mb-4">
+       <div class="card manager-card">
+        <div class="manager-avatar" style="width:120px; height:120px; border-radius:50%; overflow:hidden; border:3px solid #292828; display:flex; align-items:center; justify-content:center; background:#fff;"> 
+            <img src="img/neeraj_pandey.png" alt="neeraj_pandey">
+        </div>
+        <h4 class="manager-name">Mr. Neeraj Pandey</h4>
+        <p class="manager-role">Director</p>
+        <p>A dynamic operations leader ensuring smooth execution, strong teamwork, and consistent growth at YUGPE.</p><button class="btn btn-outline-primary" onclick="showPage('managers')">View Profile</button>
+       </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+       <div class="card manager-card">
+        <div class="manager-avatar" style="width:120px; height:120px; border-radius:50%; overflow:hidden; border:3px solid #292828; display:flex; align-items:center; justify-content:center; background:#fff;"> 
+            <img src="img/Jugal_thakur.png" alt="Jugal_thakur">
+        </div>
+        <h4 class="manager-name">Mr. Jugal Thakur</h4>
+        <p class="manager-role">Director</p>
+        <p>A visionary leader driving YUGPE’s growth with clarity, commitment, and future - focused strategy.</p><button class="btn btn-outline-primary" onclick="showPage('managers')">View Profile</button>
+       </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+       <div class="card manager-card">
+        <div class="manager-avatar" style="width:120px; height:120px; border-radius:50%; overflow:hidden; border:3px solid #292828; display:flex; align-items:center; justify-content:center; background:#fff;"> 
+            <img src="img/kamal_kant.png" alt="kamal_kant">
+        </div>
+        <h4 class="manager-name">Mr. Kamal Kant</h4>
+        <p class="manager-role">Director</p>
+        <p>A tech-driven innovator shaping YUGPE’s digital excellence with smart solutions and seamless technology.</p><button class="btn btn-outline-primary" onclick="showPage('managers')">View Profile</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Testimonials -->
+   <section class="section">
+    <div class="container">
+     <h2 class="section-title">What Our Clients Say</h2>
+     <p class="section-subtitle">Real feedback from satisfied customers</p>
+     <div class="row">
+      <div class="col-lg-4 mb-4">
+       <div class="card testimonial-card">
+        <div class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"YUGPE has transformed our business operations. The platform is intuitive and the support is exceptional."</p>
+        <div class="testimonial-author">
+         - Suresh Gupta, Business Owner
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+       <div class="card testimonial-card">
+        <div class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"The cashback system is amazing! We've saved thousands while growing our business."</p>
+        <div class="testimonial-author">
+         - Meera Singh, Retailer
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+       <div class="card testimonial-card">
+        <div class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Professional service and reliable platform. Highly recommended for any business."</p>
+        <div class="testimonial-author">
+         - Vikram Joshi, Entrepreneur
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div><!-- About Us Page -->
+  <div id="about-page" class="page hidden">
+   <div class="page-header">
+    <div class="container">
+     <h1 class="page-title">About YUGPE</h1>
+     <p>Empowering businesses with innovative solutions since 2020</p>
+    </div>
+   </div>
+   <div class="container page-content"><!-- Mission & Vision -->
+    <div class="row mb-5">
+     <div class="col-lg-6 mb-4">
+      <div class="card h-100">
+       <div class="card-body p-4">
+        <h3 class="text-primary mb-3">Our Mission</h3>
+        <p>To empower every Indian with digital convenience, smart earnings, and financial independence. Our mission is to create a powerful ecosystem where people can learn, earn, and grow, making digital services accessible, rewarding, and secure for everyone.</p>
+        <p>हर भारतीय को डिजिटल सुविधा, स्मार्ट कमाई और वित्तीय स्वतंत्रता से सशक्त बनाना ही YUGPE का मिशन है। हम ऐसा प्लेटफ़ॉर्म बना रहे हैं जहाँ लोग सीख सकें, कमा सकें और आगे बढ़ सकें, और हर डिजिटल सेवा सुरक्षित, सरल और लाभदायक बने।</p>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-6 mb-4">
+      <div class="card h-100">
+       <div class="card-body p-4">
+        <h3 class="text-primary mb-3">Our Vision</h3>
+        <p>To build a future-ready Digital Bharat where technology, opportunity, and financial growth come together. We aim to become India’s most trusted platform for digital payments, cashback, and income opportunities — enabling millions to achieve progress and stability.</p>
+        <p>एक ऐसे भविष्य-तैयार डिजिटल भारत का निर्माण करना जहाँ तकनीक, अवसर और वित्तीय विकास एक साथ आएँ। हमारा लक्ष्य है कि YUGPE भारत का सबसे विश्वसनीय प्लेटफ़ॉर्म बने — जो लाखों लोगों को डिजिटल भुगतान, कैशबैक और आय के अवसरों से सशक्त करे।</p>
+       </div>
+      </div>
+     </div>
+    </div><!-- Company Timeline -->
+    <div class="mb-5">
+     <h2 class="section-title">Our Journey</h2>
+     <div class="timeline">
+      <div class="timeline-item">
+       <div class="timeline-content">
+        <h4>July 2020 - Foundation</h4>
+        <p>Founded in July 2025, YUGPE began with a simple vision — to empower India with smarter digital solutions, stronger income opportunities, and a future full of possibilities.</p>
+       </div>
+      </div>
+      <div class="timeline-item">
+       <div class="timeline-content">
+        <h4>AushadhiPro – The Wellness Brand of YUGPE</h4>
+        <p>Pure Ayurveda • Real Results • Everyday Wellness :- Bringing ancient Ayurvedic healing to modern life — naturally, safely, and effectively.</p>
+       </div>
+      </div>
+      <div class="timeline-item">
+       <div class="timeline-content">
+        <h4>November 2025, Our Launching </h4>
+        <p>a New digital revolution begins, unlocking smarter payments, bigger earnings, and limitless opportunities.</p>
+       </div>
+      </div>
+      <div class="timeline-item">
+       <div class="timeline-content">
+        <h4>Wellness Products & Smart Bill Payments</h4>
+        <p>AushadhiPro — Premium Ayurvedic products और तेज़, सुरक्षित bill payments एक ही जगह।</p>
+       </div>
+      </div>
+     </div>
+    </div><!-- Values -->
+    <div class="mb-5">
+     <h2 class="section-title">Our Values</h2>
+     <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-handshake"></i>
+         </div>
+         <h4>Trust</h4>
+         <p>Building lasting relationships through transparency and reliability</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-eye"></i>
+         </div>
+         <h4>Transparency</h4>
+         <p>Open communication and honest business practices</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-users"></i>
+         </div>
+         <h4>Support</h4>
+         <p>Dedicated assistance for our partners' success</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-seedling"></i>
+         </div>
+         <h4>Growth</h4>
+         <p>Continuous innovation and expansion opportunities</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div><!-- Founder Story -->
+    <div class="row align-items-center mb-5">
+     <div class="col-lg-4 mb-4">
+      <div class="text-center">
+       <div style="width: 200px; height: 200px; border-radius: 50%; background: var(--light-gray); margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: var(--primary-orange);"><i class="fas fa-user"></i>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-8">
+      <h3 class="text-primary mb-3">Director's Message</h3>
+      <p class="lead">"At YUGPE, we are committed to shaping a smarter, stronger, and future - ready Digital Bharat. Our mission is to build a platform that delivers trust, transparency, and growth — where every user experiences real value, real opportunity, and real progress."</p>
+      <p>With innovation as our foundation and excellence as our promise, we are not just building a company… we are building a legacy of empowerment for millions.</p>
+      <p><strong>- Kamal Kant, Director &amp; Techanical Head</strong></p>
+     </div>
+    </div><!-- CTA Section -->
+    <div class="text-center">
+     <div class="card" style="background: var(--gradient-orange); color: white;">
+      <div class="card-body p-5">
+       <h3 class="mb-3">Ready to Join Our Journey?</h3>
+       <p class="mb-4">Discover opportunities and grow your business with YUGPE</p>
+       <div class="d-flex justify-content-center gap-3"><button class="btn btn-light btn-lg" onclick="showPage('careers')">View Careers</button> <button class="btn btn-outline-light btn-lg" onclick="showPage('contact')">Contact Us</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Company Docs Page -->
+  <div id="docs-page" class="page hidden">
+   <div class="page-header">
+    <div class="container">
+     <h1 class="page-title">Company Documents</h1>
+     <p>Access important company documents and certificates</p>
+    </div>
+   </div>
+   <div class="container page-content"><!-- Search and Filter -->
+    <div class="row mb-4">
+     <div class="col-lg-6 mb-3"><input type="text" class="form-control" placeholder="Search documents..." id="docSearch">
+     </div>
+     <div class="col-lg-6 mb-3"><select class="form-control" id="docFilter"> <option value="">All Categories</option> <option value="policy">Policy</option> <option value="certificate">Certificate</option> <option value="financial">Financial</option> <option value="legal">Legal</option> </select>
+     </div>
+    </div><!-- Documents Grid -->
+    <div class="row" id="documentsGrid">
+     <div class="col-lg-4 col-md-6 mb-4" data-category="Legal">
+      <div class="card document-card">
+       <div class="document-icon"><i class="fas fa-certificate"></i>
+       </div>
+       <h5>Certificate of incorporation</h5>
+       <p class="text-muted">PDF • 2.3 MB</p>
+       <div class="d-flex gap-2"><button class="btn btn-outline-primary btn-sm flex-fill" onclick="viewDocument('docs/coi.pdf')">View</button> <A href="Docs/COI.pdf" Download class="btn btn-primary btn-sm flex-fill">Download</a>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="financial">
+      <div class="card document-card">
+       <div class="document-icon"><i class="fas fa-file-alt"></i>
+       </div>
+       <h5>Tax Diduction Number</h5>
+       <p class="text-muted">PDF • 1.8 MB</p>
+       <div class="d-flex gap-2"><button class="btn btn-outline-primary btn-sm flex-fill" onclick="viewDocument('doc/tan number.html')">View</button> <A href="Docs/Tan Number.pdf" class="btn btn-primary btn-sm flex-fill">Download</A>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="financial">
+      <div class="card document-card">
+       <div class="document-icon"><i class="fas fa-chart-bar"></i>
+       </div>
+       <h5>Pan Crad Number</h5>
+       <p class="text-muted">PDF • 5.2 MB</p>
+       <div class="d-flex gap-2"><button class="btn btn-outline-primary btn-sm flex-fill" onclick="viewDocument('doc/pan number.pdf')">View</button> <A href="Docs/Pan Number.pdf" class="btn btn-primary btn-sm flex-fill">Download</A>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="legal">
+      <div class="card document-card">
+       <div class="document-icon"><i class="fas fa-gavel"></i>
+       </div>
+       <h5>Udyam Registration</h5>
+       <p class="text-muted">PDF • 1.2 MB</p>
+       <div class="d-flex gap-2"><button class="btn btn-outline-primary btn-sm flex-fill" onclick="viewDocument('doc/udyam registration.pdf')">View</button> <A href="Docs/Udyam Registration.pdf" class="btn btn-primary btn-sm flex-fill">Download</A>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="financial">
+      <div class="card document-card">
+       <div class="document-icon"><i class="fas fa-award"></i>
+       </div>
+       <h5>GST</h5>
+       <p class="text-muted">PDF • 3.1 MB</p>
+       <div class="d-flex gap-2"><button class="btn btn-outline-primary btn-sm flex-fill" onclick="viewDocument('doc/gst.pdf')">View</button> <A href="Docs/GST.pdf" class="btn btn-primary btn-sm flex-fill">Download</A>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="financial">
+      <div class="card document-card">
+       <div class="document-icon"><i class="fas fa-file-invoice"></i>
+       </div>
+       <h5>Bank Details</h5>
+       <p class="text-muted">PDF • 2.7 MB</p>
+       <div class="d-flex gap-2"><button class="btn btn-outline-primary btn-sm flex-fill" onclick="viewDocument('doc/bank_details.pdf')">View</button> <A href="Docs/bank_details.pdf" class="btn btn-primary btn-sm flex-fill">Download</A>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Manager Profiles Page -->
+  <div id="managers-page" class="page hidden">
+   <div class="page-header">
+    <div class="container">
+     <h1 class="page-title">Management Team</h1>
+     <p>Meet the experienced professionals leading YUGPE</p>
+    </div>
+   </div>
+   <div class="container page-content">
+    <div class="row">
+     <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card manager-card">
+       <div class="manager-avatar" style="width:120px; height:120px; border-radius:50%; overflow:hidden; border:3px solid #292828; display:flex; align-items:center; justify-content:center; background:#fff;"> 
+            <img src="img/neeraj_pandey.png" alt="neeraj_pandey">
+        </div>
+       
+       <h4 class="manager-name">Mr. Neeraj Pandey</h4>
+       <p class="manager-role">Director</p>
+       <p> A dynamic operations leader ensuring smooth execution, strong teamwork, and consistent growth at YUGPE.</p>
+       <div class="social-links mb-3"><a href="#"><i class="fab fa-whatsapp"></i></a> <a href="#"><i class="fas fa-envelope"></i></a>
+       </div><button class="btn btn-primary" onclick="openManagerModal('neeraj_pandey')">View Full Profile</button>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card manager-card">
+        <div class="manager-avatar" style="width:120px; height:120px; border-radius:50%; overflow:hidden; border:3px solid #292828; display:flex; align-items:center; justify-content:center; background:#fff;"> 
+            <img src="img/Jugal_thakur.png" alt="Jugal_thakur">
+        </div>
+       <h4 class="manager-name">Mr. Jugal Thakur</h4>
+       <p class="manager-role">Director</p>
+       <p>Technology enthusiast with 12+ years in software development and system architecture, driving innovation at YUGPE.</p>
+       <div class="social-links mb-3"><a href="#"><i class="fab fa-whatsapp"></i></a> <a href="#"><i class="fas fa-envelope"></i></a>
+       </div><button class="btn btn-primary" onclick="openManagerModal('jugal_thakur')">View Full Profile</button>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card manager-card">
+        <div class="manager-avatar" style="width:120px; height:120px; border-radius:50%; overflow:hidden; border:3px solid #292828; display:flex; align-items:center; justify-content:center; background:#fff;"> 
+            <img src="img/kamal_kant.png" alt="kamal_kant">
+        </div>
+       <h4 class="manager-name">Mr. Kamal Kant</h4>
+       <p class="manager-role">Director</p>
+       <p>Financial expert with extensive experience in corporate finance, ensuring sustainable growth and financial excellence.</p>
+       <div class="social-links mb-3"><a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i class="fas fa-envelope"></i></a>
+       </div><button class="btn btn-primary" onclick="openManagerModal('kamal_kant')">View Full Profile</button>
+      </div>
+     </div>
+     
+    </div>
+   </div>
+  </div><!-- Business Page -->
+  <div id="business-page" class="page hidden">
+   <div class="page-header">
+    <div class="container">
+     <h1 class="page-title">Our Business Module</h1>
+     <p>The YUGPE business model is built on smart digital services, cashback benefits, and 18 powerful income opportunities that create a transparent and sustainable earning system.</p>
+    </div>
+   </div>
+   <div class="container page-content"><!-- Business Model Overview -->
+    <div class="row mb-5">
+     <div class="col-lg-4 mb-4">
+      <div class="card text-center h-100">
+       <div class="card-body p-4">
+        <div class="feature-icon mb-3"><i class="fas fa-money-check-alt"></i>
+        </div>
+        <h4>Digital Services Module</h4>
+        <p>Mobile recharge, bill payment, FASTag, DTH, और utility services — सब एक ही प्लेटफ़ॉर्म पर। हर लेनदेन पर users को मिलता है assured cashback और rewards।</p>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 mb-4">
+      <div class="card text-center h-100">
+       <div class="card-body p-4">
+        <div class="feature-icon mb-3"><i class="fas fa-chart-line"></i>
+        </div>
+        <h4>Wellness & Product Sales Module</h4>
+        <p>AushadhiPro के premium Ayurvedic products की बिक्री से users को retail profit, repurchase bonus और team - based commission जैसे कई लाभ मिलते हैं।</p>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 mb-4">
+      <div class="card text-center h-100">
+       <div class="card-body p-4">
+        <div class="feature-icon mb-3"><i class="fas fa-network-wired"></i>
+        </div>
+        <h4>Earning & Referral Module</h4>
+        <p>YUGPE एक मजबूत income ecosystem प्रदान करता है जिसमें 18 प्रकार की कमाई शामिल है। Referral network के माध्यम से users long-term earning और passive income बना सकते हैं।</p>
+       </div>
+      </div>
+     </div>
+    </div><!-- Partner Benefits -->
+    <div class="mb-5">
+     <h2 class="section-title">Partner Benefits</h2>
+     <div class="row">
+      <div class="col-lg-6 mb-4">
+       <div class="d-flex align-items-start">
+        <div class="feature-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem;"><i class="fas fa-percentage"></i>
+        </div>
+        <div>
+         <h5>Attractive Commission Structure</h5>
+         <p>Earn competitive commissions on every transaction with transparent payout system</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+       <div class="d-flex align-items-start">
+        <div class="feature-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem;"><i class="fas fa-graduation-cap"></i>
+        </div>
+        <div>
+         <h5>Training &amp; Support</h5>
+         <p>Comprehensive training programs and ongoing support for all partners</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+       <div class="d-flex align-items-start">
+        <div class="feature-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem;"><i class="fas fa-mobile-alt"></i>
+        </div>
+        <div>
+         <h5>Technology Platform</h5>
+         <p>Advanced mobile and web platforms for seamless business operations</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+       <div class="d-flex align-items-start">
+        <div class="feature-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem;"><i class="fas fa-chart-line"></i>
+        </div>
+        <div>
+         <h5>Growth Opportunities</h5>
+         <p>Multiple income streams and expansion opportunities across various sectors</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div><!-- Partnership CTA -->
+    <div class="card mb-5" style="background: var(--gradient-orange); color: white;">
+     <div class="card-body p-5 text-center">
+      <h3 class="mb-3">Ready to Partner with Us?</h3>
+      <p class="mb-4">Join thousands of successful partners and start your journey with YUGPE today</p><button class="btn btn-light btn-lg" data-bs-toggle="modal" data-bs-target="#partnershipModal">Get Partnership Details</button>
+     </div>
+    </div>
+
+    <!-- ====== Business Documents / Brochures (ADDED) ====== -->
+    <div class="mb-5">
+      <h2 class="section-title">Business Plan & Brochures</h2>
+      <p class="section-subtitle">Download or preview our income plan, producs details & business guides</p>
+
+      <div class="row" id="businessDocsGrid">
+        <!-- Business Brochure -->
+        <div class="col-lg-4 col-md-6 mb-4" data-doc="business_plan_pdf">
+          <div class="card document-card">
+            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+            <h5>Business Plan PDF</h5>
+            <p class="text-muted">PDF • 1.6 MB</p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary btn-sm flex-fill" onclick="viewBusinessPDF('business_plan_pdf')">View</button>
+              <a class="btn btn-primary btn-sm flex-fill" id="download-business_plan_pdf" href="Docs/YUGPE PLAN PDF.pdf" download>Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- product_details -->
+        <div class="col-lg-4 col-md-6 mb-4" data-doc="product_details">
+          <div class="card document-card">
+            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+            <h5>Productes Details</h5>
+            <p class="text-muted">PDF • 2.2 MB</p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary btn-sm flex-fill" onclick="viewBusinessPDF('product_details')">View</button>
+              <a class="btn btn-primary btn-sm flex-fill" id="download-product_details" href="Docs/Aushadhipro.pdf" download>Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partner Guidelines -->
+        <div class="col-lg-4 col-md-6 mb-4" data-doc="partner_guidelines">
+          <div class="card document-card">
+            <div class="document-icon"><i class="fas fa-file-pdf"></i></div>
+            <h5>Partner Guidelines</h5>
+            <p class="text-muted">PDF • 2.2 MB</p>
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-primary btn-sm flex-fill" onclick="viewBusinessPDF('partner_guidelines')">View</button>
+              <a class="btn btn-primary btn-sm flex-fill" id="download-partner_guidelines" href="Docs/partner Guidline.pdf" download>Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+    <!-- ====== END Business Documents section ====== -->
+
+    <!-- FAQ Section -->
+    <div class="mb-5">
+     <h2 class="section-title">Frequently Asked Questions</h2>
+     <div class="accordion" id="businessFAQ">
+      <div class="accordion-item">
+       <h2 class="accordion-header" id="heading1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1"> What are the requirements to become a partner? </button></h2>
+       <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#businessFAQ">
+        <div class="accordion-body">
+         To become a YUGPE partner, you need a valid business registration, basic infrastructure (computer/smartphone), and commitment to our service standards. We provide comprehensive training and support to get you started.
+        </div>
+       </div>
+      </div>
+      <div class="accordion-item">
+       <h2 class="accordion-header" id="heading2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2"> How much investment is required? </button></h2>
+       <div id="faq2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#businessFAQ">
+        <div class="accordion-body">
+         The investment varies based on the partnership model you choose. We offer flexible options starting from ₹10,000 to ₹1,00,000 depending on the services and territory you want to cover.
+        </div>
+       </div>
+      </div>
+      <div class="accordion-item">
+       <h2 class="accordion-header" id="heading3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3"> What kind of support do you provide? </button></h2>
+       <div id="faq3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#businessFAQ">
+        <div class="accordion-body">
+         We provide 24/7 technical support, marketing materials, training programs, regular updates, and dedicated relationship managers to ensure your success as a partner.
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Products Page -->
+  <div id="products-page" class="page hidden">
+   <div class="page-header">
+    <div class="container">
+     <h1 class="page-title">Our Products</h1>
+     <p>Our product range reflects our commitment to purity, performance, and customer satisfaction. Whether it’s wellness, utility, or digital solutions, each product is crafted to meet real needs with genuine value.</p>
+    </div>
+   </div>
+   <div class="container page-content"><!-- Product Filters -->
+    <div class="row mb-4">
+     <div class="col-lg-6 mb-3"><input type="text" class="form-control" placeholder="Search products..." id="productSearch">
+     </div>
+     <div class="col-lg-6 mb-3"><select class="form-control" id="productFilter"> <option value="">All Categories</option> <option value="wellness">Wellness</option> <option value="recharge">Repurchase</option> </select>
+     </div>
+    </div><!-- Products Grid -->
+    <div class="row" id="productsGrid">
+     <div class="col-lg-4 col-md-6 mb-4" data-category="wellness">
+      <div class="card product-card">
+       <div class="product-image">
+        <img src="img/artho care.png" alt="artho_care">
+       </div>
+       <div class="product-info"><span class="badge bg-success mb-2">Best Seller</span>
+        <h4 class="product-title">Aushadhipro Artho Care</h4>
+        <p class="product-subtitle">Relieves joint pain and improves mobility with natural anti - inflammatory herbs.</p>
+        <div class="product-price">
+         ₹ 699.00
+        </div>
+        <div class="d-flex gap-2"><button class="btn btn-outline-primary flex-fill" onclick="openProductModal('artho_care')">Details</button> <button class="btn btn-primary flex-fill">Add to Cart</button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="wellness">
+      <div class="card product-card">
+       <div class="product-image">
+        <img src="img/digestion care.png" alt="digestion_care">
+       </div>
+       <div class="product-info"><span class="badge bg-success mb-2">Best Seller</span>
+        <h4 class="product-title">Aushadhipro Digestion care</h4>
+        <p class="product-subtitle">Improves digestion naturally, reduces gas, bloating, and supports a healthy gut.</p>
+        <div class="product-price">
+         ₹ 699.00
+        </div>
+        <div class="d-flex gap-2"><button class="btn btn-outline-primary flex-fill" onclick="openProductModal('digestion_care')">Details</button> <button class="btn btn-primary flex-fill">Recharge Now</button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="wellness">
+      <div class="card product-card">
+       <div class="product-image">
+        <img src="img/Diabetes Care.png" alt="diabetes_care">
+       </div>
+       <div class="product-info"><span class="badge bg-warning mb-2">Popular</span>
+        <h4 class="product-title">AushadhiPro Diabetes Care</h4>
+        <p class="product-subtitle">Helps maintain balanced blood sugar levels and supports healthy metabolic function.</p>
+        <div class="product-price">
+         ₹ 699.00
+        </div>
+        <div class="d-flex gap-2"><button class="btn btn-outline-primary flex-fill" onclick="openProductModal('diabetes_care')">Details</button> <button class="btn btn-primary flex-fill">Subscribe</button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="wellness">
+      <div class="card product-card">
+       <div class="product-image">
+        <img src="img/osteoherb.png" alt="osteo_herbs">
+       </div>
+       <div class="product-info"><span class="badge bg-warning mb-2">Popular</span>
+        <h4 class="product-title">Aushadhipro Osteo Herbs</h4>
+        <p class="product-subtitle">Strengthens bones and joints while reducing stiffness and long-term discomfort.</p>
+        <div class="product-price">
+         ₹ 949.00
+        </div>
+        <div class="d-flex gap-2"><button class="btn btn-outline-primary flex-fill" onclick="openProductModal('osteo_herbs')">Details</button> <button class="btn btn-primary flex-fill">Add to Cart</button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="wellness">
+      <div class="card product-card">
+       <div class="product-image">
+        <img src="img/wellness pro.png" alt="wellness_pro">
+       </div>
+       <div class="product-info"><span class="badge bg-warning mb-2">Popular</span>
+        <h4 class="product-title"> AushadhiPro Wellness Pro</h4>
+        <p class="product-subtitle">A complete daily wellness formula that boosts strength, immunity, and energy.</p>
+        <div class="product-price">
+         ₹ 1499.00
+        </div>
+        <div class="d-flex gap-2"><button class="btn btn-outline-primary flex-fill" onclick="openProductModal('wellness_pro')">Details</button> <button class="btn btn-primary flex-fill">Recharge Now</button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="wellness">
+      <div class="card product-card">
+       <div class="product-image">
+        <img src="img/wellness Pro Prash.png" alt="wellness_pro_prash">
+       </div>
+       <div class="product-info"><span class="badge bg-warning mb-2">Popular</span>
+        <h4 class="product-title">AushadhiPro Wellness Pro Prash</h4>
+        <p class="product-subtitle">A powerful herbal prash that enhances stamina, vitality, and overall health.</p>
+        <div class="product-price">
+         ₹ 1599.00
+        </div>
+        <div class="d-flex gap-2"><button class="btn btn-outline-primary flex-fill" onclick="openProductModal('wellness_pro_prash')">Details</button> <button class="btn btn-primary flex-fill">Subscribe</button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="Repurchase">
+      <div class="card product-card">
+       <div class="product-image">
+        <img src="img/itching Relief.png" alt="itching_relief">
+       </div>
+       <div class="product-info"><span class="badge bg-warning mb-2">Popular</span>
+        <h4 class="product-title">Aushadhipro Itching Relief Creme</h4>
+        <p class="product-subtitle">Provides quick soothing relief from itching, rashes, and skin irritation.</p>
+        <div class="product-price">
+         ₹ 149.00
+        </div>
+        <div class="d-flex gap-2"><button class="btn btn-outline-primary flex-fill" onclick="openProductModal('itching_relief')">Details</button> <button class="btn btn-primary flex-fill">Subscribe</button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="Repurchase">
+      <div class="card product-card">
+       <div class="product-image">
+        <img src="img/Yugpe t-shirt.png" alt="t_shirt">
+       </div>
+       <div class="product-info"><span class="badge bg-warning mb-2">Popular</span>
+        <h4 class="product-title">YUGPE T-Shirth</h4>
+        <p class="product-subtitle">Premium-quality YUGPE T-shirt designed for comfort, style, and confident everyday wear.</p>
+        <div class="product-price">
+         ₹ 599.00
+        </div>
+        <div class="d-flex gap-2"><button class="btn btn-outline-primary flex-fill" onclick="openProductModal('t_shirt')">Details</button> <button class="btn btn-primary flex-fill">Subscribe</button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-category="Repurchase">
+      <div class="card product-card">
+       <div class="product-image">
+        <img src="img/Yugpe Bag.png" alt="yugpe_bag">
+       </div>
+       <div class="product-info"><span class="badge bg-warning mb-2">Popular</span>
+        <h4 class="product-title">Yugpe Laptop Bag</h4>
+        <p class="product-subtitle">Carry your confidence with YUGPE — strong, stylish, and made for everyday hustle</p>
+        <div class="product-price">
+         ₹ 1599.00
+        </div>
+        <div class="d-flex gap-2"><button class="btn btn-outline-primary flex-fill" onclick="openProductModal('yugpe_bag')">Details</button> <button class="btn btn-primary flex-fill">Subscribe</button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Testimonials Page -->
+  <div id="testimonials-page" class="page hidden">
+   <div class="page-header">
+    <div class="container">
+     <h1 class="page-title">Customer Testimonials</h1>
+     <p>Our customers trust us for quality, reliability, and results — their words inspire us to do better every day.</p>
+    </div>
+   </div>
+   <div class="container page-content"><!-- Filter Buttons -->
+    <div class="text-center mb-5">
+     <div class="btn-group" role="group"><button type="button" class="btn btn-outline-primary active" onclick="filterTestimonials('all')">All</button> <button type="button" class="btn btn-outline-primary" onclick="filterTestimonials('customers')">Customers</button> <button type="button" class="btn btn-outline-primary" onclick="filterTestimonials('partners')">Associate</button>
+     </div>
+    </div><!-- Testimonials Grid -->
+    <div class="row" id="testimonialsGrid">
+     <div class="col-lg-4 col-md-6 mb-4" data-type="customers">
+      <div class="card testimonial-card">
+       <div class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+       </div>
+       <p class="testimonial-text">"YUGPE has made my life so much easier. The mobile recharge is instant and the cashback is amazing. Highly recommended!"</p>
+       <div class="testimonial-author">
+        - Suresh Gupta, Customer
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-type="partners">
+      <div class="card testimonial-card">
+       <div class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+       </div>
+       <p class="testimonial-text">"As a YUGPE partner, I've been able to grow my business significantly. The support team is excellent and the platform is very user-friendly."</p>
+       <div class="testimonial-author">
+        - Meera Singh, Associate
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-type="customers">
+      <div class="card testimonial-card">
+       <div class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+       </div>
+       <p class="testimonial-text">"The AushadhiPro products are fantastic! I've seen a real improvement in my health since I started using them."</p>
+       <div class="testimonial-author">
+        - Rajesh Sharma, Customer
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-type="partners">
+      <div class="card testimonial-card">
+       <div class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+       </div>
+       <p class="testimonial-text">"YUGPE partnership has been a game-changer for my business. The commission structure is transparent and payments are always on time."</p>
+       <div class="testimonial-author">
+        - Vikram Joshi, Associate
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-type="customers">
+      <div class="card testimonial-card">
+       <div class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+       </div>
+       <p class="testimonial-text">"Excellent service and great customer support. I've been using YUGPE for over a year now and never had any issues."</p>
+       <div class="testimonial-author">
+        - Priya Patel, Customer
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4 col-md-6 mb-4" data-type="partners">
+      <div class="card testimonial-card">
+       <div class="stars"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+       </div>
+       <p class="testimonial-text">"The training and support provided by YUGPE is exceptional. They really care about their partners' success."</p>
+       <div class="testimonial-author">
+        - Amit Kumar, Associate
+       </div>
+      </div>
+     </div>
+    </div><!-- Submit Testimonial CTA -->
+    <div class="text-center mt-5">
+     <div class="card" style="background: var(--light-gray);">
+      <div class="card-body p-5">
+       <h3 class="mb-3">Share Your Experience</h3>
+       <p class="mb-4">Your feedback helps us grow and serve you better — share your experience with YUGPE.</p><button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#testimonialModal">Submit Testimonial</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Careers Page -->
+  <div id="careers-page" class="page hidden">
+   <div class="page-header">
+    <div class="container">
+     <h1 class="page-title">Join Our Team</h1>
+     <p>Start your growth story with YUGPE and lead the way forward.</p>
+    </div>
+   </div>
+   <div class="container page-content"><!-- Why Work With Us -->
+    <div class="mb-5">
+     <h2 class="section-title">Why Work With YUGPE?</h2>
+     <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-rocket"></i>
+         </div>
+         <h5>Growth Opportunities</h5>
+         <p>Accelerate your career with learning and development programs</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-users"></i>
+         </div>
+         <h5>Great Team</h5>
+         <p>Work with passionate professionals in a collaborative environment</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-graduation-cap"></i>
+         </div>
+         <h5>Work-Life Balance</h5>
+         <p>Flexible working arrangements and comprehensive benefits</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-lightbulb"></i>
+         </div>
+         <h5>Innovation</h5>
+         <p>Be part of cutting-edge projects and technological advancement</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+     <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-shield-alt"></i>
+         </div>
+         <h5>Trusted Digital Platform</h5>
+         <p>YUGPE delivers secure, reliable, and transparent services you can confidently depend on.</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-wallet"></i>
+         </div>
+         <h5>Multiple Earning Opportunities</h5>
+         <p>Earn smartly through multiple channels based on your effort and performance.</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-balance-scale"></i>
+         </div>
+         <h5>Ethical & Transparent</h5>
+         <p>Every process at YUGPE is clean, honest, and built on strong ethical values.</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+       <div class="card text-center h-100">
+        <div class="card-body p-4">
+         <div class="feature-icon mb-3"><i class="fas fa-globe-asia"></i>
+         </div>
+         <h5>Future-Ready Vision</h5>
+         <p>Join a brand that’s shaping the next generation of digital Bharat with purpose and passion.</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div><!-- Current Openings -->
+    <div class="mb-5">
+     <h2 class="section-title">Current Openings</h2>
+     <div class="job-card">
+      <div class="row align-items-center">
+       <div class="col-lg-8">
+        <h4>Unlimited Growth Opportunities</h4>
+        
+        <p>YUGPE gives you a platform where your skills, effort, and consistency shape your success. Here, you grow faster, learn smarter, and achieve more.</p>
+       </div>
+       <div class="col-lg-4 text-end"><button class="btn btn-primary" onclick="openJobModal('dev1')">Apply Now</button>
+       </div>
+      </div>
+     </div>
+     <div class="job-card">
+      <div class="row align-items-center">
+       <div class="col-lg-8">
+        <h4>Learn & Earn Together</h4>
+        
+        <p>With YUGPE, you build skills while earning through ethical, transparent, and rewarding systems. A supportive network helps you move forward with confidence.</p>
+       </div>
+       <div class="col-lg-4 text-end"><button class="btn btn-primary" onclick="openJobModal('marketing1')">Apply Now</button>
+       </div>
+      </div>
+     </div>
+     <div class="job-card">
+      <div class="row align-items-center">
+       <div class="col-lg-8">
+        <h4>Work on Your Own Terms</h4>
+        
+        <p>No pressure, no fixed hours — your career grows according to your time, dedication, and goals. Perfect for students, homemakers, professionals, and entrepreneurs.</p>
+       </div>
+       <div class="col-lg-4 text-end"><button class="btn btn-primary" onclick="openJobModal('bd1')">Apply Now</button>
+       </div>
+      </div>
+     </div>
+     <div class="job-card">
+      <div class="row align-items-center">
+       <div class="col-lg-8">
+        <h4>Be Part of a Vision-Driven Team</h4>
+        
+        <p>Join a mission that’s building Digital Bharat and creating real opportunities for millions. Your contribution helps shape a stronger future for everyone.</p>
+       </div>
+       <div class="col-lg-4 text-end"><button class="btn btn-primary" onclick="openJobModal('support1')">Apply Now</button>
+       </div>
+      </div>
+     </div>
+    </div><!-- Benefits -->
+    <div class="mb-5">
+     <h2 class="section-title">Yugpe Digital Bharat Benefits</h2>
+     <div class="row">
+      <div class="col-lg-6 mb-4">
+       <div class="d-flex align-items-start">
+        <div class="feature-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem;"><i class="fas fa-layer-group"></i>
+        </div>
+        <div>
+         <h5>One Platform, Multiple Services</h5>
+         <p>Recharge, bill payment, cashback, earning — sab kuchh ek hi app par, fast aur secure.</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+       <div class="d-flex align-items-start">
+        <div class="feature-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem;"><i class="fas fa-chart-line"></i>
+        </div>
+        <div>
+         <h5>Earn Without Limits</h5>
+         <p>Referral system aur business model ke through aap jitna kaam karein, utni income increase hoti rahti hai.</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+       <div class="d-flex align-items-start">
+        <div class="feature-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem;"><i class="fas fa-hand-holding-usd"></i>
+        </div>
+        <div>
+         <h5>Low Investment, High Earning Potential</h5>
+         <p>Begin your digital career without risk — sirf consistency aur skills se earning grow hoti hai.</p>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+       <div class="d-flex align-items-start">
+        <div class="feature-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem;"><i class="fas fa-trophy"></i>
+        </div>
+        <div>
+         <h5>Performance Bonuses</h5>
+         <p>Recognition and rewards for outstanding performance</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Contact Page -->
+  <div id="contact-page" class="page hidden">
+   <div class="page-header">
+    <div class="container">
+     <h1 class="page-title">Contact Us</h1>
+     <p>Connect with our team for any questions or support you need.</p>
+    </div>
+   </div>
+   <div class="container page-content">
+    <div class="row">
+     <div class="col-lg-8 mb-5">
+      <div class="card">
+       <div class="card-body p-4">
+        <h3 class="mb-4">Send us a Message</h3>
+        <form id="contactForm">
+         <div class="row">
+          <div class="col-md-6 mb-3"><label for="firstName" class="form-label">First Name *</label> <input type="text" class="form-control" id="firstName" required>
+          </div>
+          <div class="col-md-6 mb-3"><label for="lastName" class="form-label">Last Name *</label> <input type="text" class="form-control" id="lastName" required>
+          </div>
+         </div>
+         <div class="row">
+          <div class="col-md-6 mb-3"><label for="email" class="form-label">Email Address *</label> <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="col-md-6 mb-3"><label for="phone" class="form-label">Phone Number</label> <input type="tel" class="form-control" id="phone">
+          </div>
+         </div>
+         <div class="mb-3"><label for="subject" class="form-label">Subject *</label> <select class="form-control" id="subject" required> <option value="">Select a subject</option> <option value="general">General Inquiry</option> <option value="support">Technical Support</option> <option value="partnership">Partnership</option> <option value="careers">Careers</option> <option value="feedback">Feedback</option> </select>
+         </div>
+         <div class="mb-3"><label for="message" class="form-label">Message *</label> <textarea class="form-control" id="message" rows="5" required></textarea>
+         </div>
+         <div class="mb-3">
+          <div class="form-check"><input class="form-check-input" type="checkbox" id="recaptcha" required> <label class="form-check-label" for="recaptcha"> I'm not a robot (reCAPTCHA placeholder) </label>
+          </div>
+         </div><button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+        </form>
+       </div>
+      </div>
+     </div>
+     <div class="col-lg-4"><!-- Contact Information -->
+      <div class="card mb-4">
+       <div class="card-body p-4">
+        <h4 class="mb-4">Contact Information</h4>
+        <div class="d-flex align-items-start mb-3"><i class="fas fa-map-marker-alt text-primary me-3 mt-1"></i>
+         <div><strong> Head Office</strong><br>
+           01, Yugpe Office , PSC gate -3 <br>
+           Mainpuri Road Kunaira Etawah UP <br>
+           (206001) India
+         </div>
+        </div>
+        <div class="d-flex align-items-start mb-3"><i class="fas fa-phone text-primary me-3 mt-1"></i>
+         <div><strong>Phone</strong><br>
+           +91 99978 19929 <br>
+           +91 70606 70529
+         </div>
+        </div>
+        <div class="d-flex align-items-start mb-3"><i class="fas fa-envelope text-primary me-3 mt-1"></i>
+         <div><strong>Email</strong><br>
+           info@yugpe.com<br>
+         </div>
+        </div>
+       </div>
+      </div><!-- Business Hours -->
+      <div class="card mb-4">
+       <div class="card-body p-4">
+        <h4 class="mb-4">Business Hours</h4>
+        <div class="mb-2"><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM
+        </div>
+        <div class="mb-2"><strong>Saturday:</strong> 10:00 AM - 4:00 PM
+        </div>
+        <div class="mb-2"><strong>Sunday:</strong> Closed
+        </div>
+        <hr>
+        <div class="text-success"><i class="fas fa-clock me-2"></i> <strong>24/7 Online Support Available</strong>
+        </div>
+       </div>
+      </div><!-- Social Links -->
+      <div class="card">
+       <div class="card-body p-4">
+        <h4 class="mb-4">Follow Us</h4>
+        <div class="social-links"><a href="https://www.facebook.com/share/15xzrPNsYb/" class="me-2"><i class="fab fa-facebook"></i></a> <a href="https://t.me/yugpedigitalbharat" class="me-2"><i class="fab fa-telegram-plane"></i></a> <a href="https://whatsapp.com/channel/0029Vb76RX5DTkK1gGzCDm0z" class="me-2"><i class="fab fa-whatsapp"></i></a> <a href="https://www.instagram.com/yugpedigitalbharat?igsh=MXhzZm9kbzJzMnd4Yw==" class="me-2"><i class="fab fa-instagram"></i></a> <a href="https://youtube.com/@yugpedigitalbharat?feature=shared"><i class="fab fa-youtube"></i></a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div><!-- Map -->
+    <div class="row mt-5">
+     <div class="col-12">
+      <div class="card">
+       <div class="card-body p-0">
+        <div style="height: 400px; background: var(--light-gray); display: flex; align-items: center; justify-content: center; color: var(--primary-orange); font-size: 2rem;">
+         <div class="text-center"><i class="fas fa-map-marked-alt mb-3"></i>
+          <div style="font-size: 1.2rem;">
+           Google Maps Integration Placeholder
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Login Page -->
+  <div id="login-page" class="page hidden">
+   <div class="container">
+    <div class="row justify-content-center" style="min-height: calc(100vh - 80px); align-items: center; padding: 2rem 0;">
+     <div class="col-lg-5 col-md-7">
+      <div class="card">
+       <div class="card-body p-5">
+        <div class="text-center mb-4">
+         <h2 class="text-primary">Welcome Back</h2>
+         <p class="text-muted">Sign in to your YUGPE account</p>
+        </div>
+        <form id="loginForm">
+         <div class="mb-3"><label for="loginEmail" class="form-label">Email Address</label> <input type="email" class="form-control" id="loginEmail" required>
+         </div>
+         <div class="mb-3"><label for="loginPassword" class="form-label">Password</label> <input type="password" class="form-control" id="loginPassword" required>
+         </div>
+         <div class="mb-3 form-check"><input type="checkbox" class="form-check-input" id="rememberMe"> <label class="form-check-label" for="rememberMe">Remember me</label>
+         </div><button type="submit" class="btn btn-primary btn-lg w-100 mb-3">Sign In</button>
+        </form>
+        <div class="text-center"><a href="#" class="text-primary">Forgot your password?</a>
+        </div>
+        <hr class="my-4">
+        <div class="text-center">
+         <p class="mb-0">Don't have an account? <a href="#" class="text-primary" onclick="showPage('register')">Sign up here</a></p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Register Page -->
+  <div id="register-page" class="page hidden">
+   <div class="container">
+    <div class="row justify-content-center" style="min-height: calc(100vh - 80px); align-items: center; padding: 2rem 0;">
+     <div class="col-lg-6 col-md-8">
+      <div class="card">
+       <div class="card-body p-5">
+        <div class="text-center mb-4">
+         <h2 class="text-primary">Join YUGPE</h2>
+         <p class="text-muted">Create your account and start your journey</p>
+        </div>
+        <form id="registerForm">
+         <div class="row">
+          <div class="col-md-6 mb-3"><label for="regFirstName" class="form-label">First Name</label> <input type="text" class="form-control" id="regFirstName" required>
+          </div>
+          <div class="col-md-6 mb-3"><label for="regLastName" class="form-label">Last Name</label> <input type="text" class="form-control" id="regLastName" required>
+          </div>
+         </div>
+         <div class="mb-3"><label for="regEmail" class="form-label">Email Address</label> <input type="email" class="form-control" id="regEmail" required>
+         </div>
+         <div class="mb-3"><label for="regPhone" class="form-label">Phone Number</label> <input type="tel" class="form-control" id="regPhone" required>
+         </div>
+         <div class="row">
+          <div class="col-md-6 mb-3"><label for="regPassword" class="form-label">Password</label> <input type="password" class="form-control" id="regPassword" required>
+          </div>
+          <div class="col-md-6 mb-3"><label for="regConfirmPassword" class="form-label">Confirm Password</label> <input type="password" class="form-control" id="regConfirmPassword" required>
+          </div>
+         </div>
+         <div class="mb-3"><label for="regAccountType" class="form-label">Account Type</label> <select class="form-control" id="regAccountType" required> <option value="">Select account type</option> <option value="individual">Individual</option> <option value="business">Business</option> <option value="partner">Partner</option> </select>
+         </div>
+         <div class="mb-3 form-check"><input type="checkbox" class="form-check-input" id="agreeTerms" required> <label class="form-check-label" for="agreeTerms"> I agree to the <a href="#" class="text-primary">Terms of Service</a> and <a href="#" class="text-primary">Privacy Policy</a> </label>
+         </div><button type="submit" class="btn btn-primary btn-lg w-100 mb-3">Create Account</button>
+        </form>
+        <div class="text-center">
+         <p class="mb-0">Already have an account? <a href="#" class="text-primary" onclick="showPage('login')">Sign in here</a></p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div><!-- Footer -->
+  <footer class="footer">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-4 mb-4">
+      <h1>YUGPE</h1>
+      <p class="subtitle">Empowering businesses with innovative solutions and creating opportunities for growth and success.</p>
+      <div class="social-links"><a href="https://www.facebook.com/share/15xzrPNsYb/"><i class="fab fa-facebook"></i></a> <a href="https://t.me/yugpedigitalbharat"><i class="fab fa-telegram-plane"></i></a> <a href="https://youtube.com/@yugpedigitalbharat?feature=shared"><i class="fab fa-youtube"></i></a> <a href="https://www.instagram.com/yugpedigitalbharat?igsh=MXhzZm9kbzJzMnd4Yw=="><i class="fab fa-instagram"></i></a><a href="https://whatsapp.com/channel/0029Vb76RX5DTkK1gGzCDm0z"><i class="fab fa-whatsapp"></i></a>
+      </div>
+     </div>
+     <div class="col-lg-2 col-md-6 mb-4">
+      <h5>Company</h5>
+      <ul class="list-unstyled">
+       <li><a href="#" onclick="showPage('about')">About Us</a></li>
+       <li><a href="#" onclick="showPage('careers')">Careers</a></li>
+       <li><a href="#" onclick="showPage('docs')">Documents</a></li>
+       <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+     </div>
+     <div class="col-lg-2 col-md-6 mb-4">
+      <h5>Services</h5>
+      <ul class="list-unstyled">
+       <li><a href="#" onclick="showPage('products')">Products</a></li>
+       <li><a href="#" onclick="showPage('business')">Business</a></li>
+       <li><a href="#">Mobile Recharge</a></li>
+       <li><a href="#">Wellness</a></li>
+      </ul>
+     </div>
+     <div class="col-lg-2 col-md-6 mb-4">
+      <h5>Support</h5>
+      <ul class="list-unstyled">
+       <li><a href="#">Help Center</a></li>
+       <li><a href="#" onclick="showPage('testimonials')">Testimonials</a></li>
+       <li><a href="#">Privacy Policy</a></li>
+       <li><a href="#">Terms of Service</a></li>
+      </ul>
+     </div>
+     <div class="col-lg-2 col-md-6 mb-4">
+      <h5>Newsletter</h5>
+      <p>Subscribe to get updates</p>
+      <div class="input-group mt-2"><input type="email" class="form-control" placeholder="Your email"> <button class="btn btn-primary" type="button">Subscribe</button>
+      </div>
+     </div>
+    </div>
+    <hr style="border-color: rgba(255,255,255,0.2);">
+    <div class="row align-items-center">
+     <div class="col-md-6">
+      <p class="mb-0">© 2025 YUGPE. Your trusted partner , Built with trust, All rights reserved.</p>
+     </div>
+     <div class="col-md-6 text-end">
+      <p class="mb-0">Designed & Managed by YUGPE.</p>
+     </div>
+    </div>
+   </div>
+  </footer><!-- Modals --> <!-- Manager Profile Modal -->
+  <div class="modal fade" id="managerModal" tabindex="-1">
+   <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="managerModalTitle">Manager Profile</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+     </div>
+     <div class="modal-body" id="managerModalBody"><!-- Manager details will be populated here -->
+     </div>
+    </div>
+   </div>
+  </div><!-- Document Viewer Modal -->
+  <div class="modal fade" id="documentModal" tabindex="-1">
+   <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="documentModalTitle">Document Viewer</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+     </div>
+     <div class="modal-body" id="documentModalBody"><!-- Document viewer will be populated here -->
+     </div>
+    </div>
+   </div>
+  </div><!-- Product Detail Modal -->
+  <div class="modal fade" id="productModal" tabindex="-1">
+   <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="productModalTitle">Product Details</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+     </div>
+     <div class="modal-body" id="productModalBody"><!-- Product details will be populated here -->
+     </div>
+    </div>
+   </div>
+  </div><!-- Job Application Modal -->
+  <div class="modal fade" id="jobModal" tabindex="-1">
+   <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="jobModalTitle">Join the YUGPE Team</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+     </div>
+     <div class="modal-body" id="jobModalBody"><!-- Job application form will be populated here -->
+     </div>
+    </div>
+   </div>
+  </div><!-- Partnership Modal -->
+  <div class="modal fade" id="partnershipModal" tabindex="-1">
+   <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title">Partnership Inquiry</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+     </div>
+     <div class="modal-body">
+      <form id="partnershipForm">
+       <div class="row">
+        <div class="col-md-6 mb-3"><label for="partnerName" class="form-label">Full Name</label> <input type="text" class="form-control" id="partnerName" required>
+        </div>
+        <div class="col-md-6 mb-3"><label for="partnerEmail" class="form-label">Email</label> <input type="email" class="form-control" id="partnerEmail" required>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-md-6 mb-3"><label for="partnerPhone" class="form-label">Phone</label> <input type="tel" class="form-control" id="partnerPhone" required>
+        </div>
+        <div class="col-md-6 mb-3"><label for="partnerLocation" class="form-label">Location</label> <input type="text" class="form-control" id="partnerLocation" required>
+        </div>
+       </div>
+       <div class="mb-3"><label for="partnershipType" class="form-label">Partnership Type</label> <select class="form-control" id="partnershipType" required> <option value="">Select partnership type</option> <option value="distributor">Distributor</option> <option value="retailer">Retailer</option> <option value="agent">Agent</option> <option value="franchise">Franchise</option> </select>
+       </div>
+       <div class="mb-3"><label for="partnerMessage" class="form-label">Message</label> <textarea class="form-control" id="partnerMessage" rows="4"></textarea>
+       </div><button type="submit" class="btn btn-primary">Submit Inquiry</button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </div><!-- Testimonial Submission Modal -->
+  <div class="modal fade" id="testimonialModal" tabindex="-1">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title">Submit Testimonial</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+     </div>
+     <div class="modal-body">
+      <form id="testimonialForm">
+       <div class="mb-3"><label for="testimonialName" class="form-label">Your Name</label> <input type="text" class="form-control" id="testimonialName" required>
+       </div>
+       <div class="mb-3"><label for="testimonialEmail" class="form-label">Email</label> <input type="email" class="form-control" id="testimonialEmail" required>
+       </div>
+       <div class="mb-3"><label for="testimonialType" class="form-label">You are a</label> <select class="form-control" id="testimonialType" required> <option value="">Select type</option> <option value="customer">Customer</option> <option value="partner">Ausiness Associate</option> </select>
+       </div>
+       <div class="mb-3"><label for="testimonialRating" class="form-label">Rating</label> <select class="form-control" id="testimonialRating" required> <option value="">Select rating</option> <option value="5">5 Stars - Excellent</option> <option value="4">4 Stars - Very Good</option> <option value="3">3 Stars - Good</option> <option value="2">2 Stars - Fair</option> <option value="1">1 Star - Poor</option> </select>
+       </div>
+       <div class="mb-3"><label for="testimonialText" class="form-label">Your Testimonial</label> <textarea class="form-control" id="testimonialText" rows="4" required></textarea>
+       </div><button type="submit" class="btn btn-primary">Submit Testimonial</button>
+      </form>
+     </div>
+    </div>
+   </div>
+  </div><!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+        // Default configuration
+        const defaultConfig = {
+            company_name: "YUGPE",
+            hero_title: "Transform Your Business Today",
+            hero_subtitle: "YUGPE is designed to empower individuals and businesses with smart digital tools, seamless payments, and powerful earning opportunities. Whether you're managing recharges, growing your referral network, or expanding your digital services, YUGPE gives you the platform to work faster, earn smarter, and scale your business effortlessly. ",
+            contact_email: "info@yugpe.com",
+            contact_phone: "+91 99978 19929"
+            
+        };
+
+        // Page navigation
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.add('hidden'));
+            
+            // Show selected page
+            const targetPage = document.getElementById(pageId + '-page');
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+            }
+            
+            // Update navbar active state
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Document search and filter
+        function setupDocumentFilters() {
+            const searchInput = document.getElementById('docSearch');
+            const filterSelect = document.getElementById('docFilter');
+            const documentsGrid = document.getElementById('documentsGrid');
+            
+            if (!searchInput || !filterSelect || !documentsGrid) return;
+            
+            function filterDocuments() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const filterValue = filterSelect.value;
+                const documentCards = documentsGrid.querySelectorAll('[data-category]');
+                
+                documentCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    const title = card.querySelector('h5').textContent.toLowerCase();
+                    
+                    const matchesSearch = title.includes(searchTerm);
+                    const matchesFilter = !filterValue || category === filterValue;
+                    
+                    if (matchesSearch && matchesFilter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            searchInput.addEventListener('input', filterDocuments);
+            filterSelect.addEventListener('change', filterDocuments);
+        }
+
+        // Product search and filter
+        function setupProductFilters() {
+            const searchInput = document.getElementById('productSearch');
+            const filterSelect = document.getElementById('productFilter');
+            const productsGrid = document.getElementById('productsGrid');
+            
+            if (!searchInput || !filterSelect || !productsGrid) return;
+            
+            function filterProducts() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const filterValue = filterSelect.value;
+                const productCards = productsGrid.querySelectorAll('[data-category]');
+                
+                productCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    const title = card.querySelector('.product-title').textContent.toLowerCase();
+                    
+                    const matchesSearch = title.includes(searchTerm);
+                    const matchesFilter = !filterValue || category === filterValue;
+                    
+                    if (matchesSearch && matchesFilter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            searchInput.addEventListener('input', filterProducts);
+            filterSelect.addEventListener('change', filterProducts);
+        }
+
+        // Testimonials filter
+        function filterTestimonials(type) {
+            const testimonialCards = document.querySelectorAll('#testimonialsGrid [data-type]');
+            const filterButtons = document.querySelectorAll('.btn-group .btn');
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            testimonialCards.forEach(card => {
+                const cardType = card.getAttribute('data-type');
+                if (type === 'all' || cardType === type) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Modal functions
+        function viewDocument(docId) {
+            // Generic placeholder viewer (keeps existing behavior for other docs)
+            const modal = new bootstrap.Modal(document.getElementById('documentModal'));
+            const modalTitle = document.getElementById('documentModalTitle');
+            const modalBody = document.getElementById('documentModalBody');
+            
+            modalTitle.textContent = 'Document Viewer';
+            modalBody.innerHTML = `
+                <div class="text-center p-5">
+                    <i class="fas fa-file-pdf text-primary" style="font-size: 4rem;"></i>
+                    <h4 class="mt-3">PDF Document Viewer</h4>
+                    <p>This would display the actual document content in a real implementation.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button class="btn btn-primary">Download</button>
+                        <button class="btn btn-outline-primary">Print</button>
+                    </div>
+                </div>
+            `;
+            
+            modal.show();
+        }
+
+        // --- Business PDF viewer integration (new) ---
+        const BUSINESS_PDFS = {
+          'business_plan_pdf': {
+            title: 'business_plan_pdf',
+            filename: 'docs/YUGPE PLAN PDF.pdf',
+            size: '1.6 MB'
+          },
+          'partner_guidelines': {
+            title: 'partner_guidelines',
+            filename: 'docs/partner Guidline.pdf',
+            size: '2.2 MB'
+          },
+          'product_details': {
+            title: 'product_details',
+            filename: 'docs/aushadhipro.pdf',
+            size: '2.4 MB'
+          },
+          // Add more entries here as needed
+        };
+
+        // Open PDF in the existing document modal with an embedded iframe
+        function viewBusinessPDF(key) {
+          const doc = BUSINESS_PDFS[key];
+          if (!doc) {
+            showErrorMessage('Document not found.');
+            return;
+          }
+
+          const modalEl = document.getElementById('documentModal');
+          const modal = new bootstrap.Modal(modalEl);
+          const modalTitle = document.getElementById('documentModalTitle');
+          const modalBody = document.getElementById('documentModalBody');
+
+          modalTitle.textContent = doc.title;
+
+          modalBody.innerHTML = `
+            <div style="min-height:60vh;">
+              <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;border:1px solid #e9ecef;">
+                <iframe src="${doc.filename}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" title="${doc.title}"></iframe>
+              </div>
+
+              <div class="mt-3 d-flex justify-content-between align-items-center">
+                <div>
+                  <small class="text-muted">File: ${doc.filename.split('/').pop()} • ${doc.size || ''}</small>
+                </div>
+
+                <div class="btn-group">
+                  <a class="btn btn-primary" href="${doc.filename}" download>Download</a>
+                  <a class="btn btn-outline-primary" href="${doc.filename}" target="_blank" rel="noopener">Open in new tab</a>
+                </div>
+              </div>
+
+              <div class="mt-2">
+                <small class="text-muted">If the preview doesn't show, you can <a href="${doc.filename}" target="_blank" rel="noopener">open the PDF here</a>.</small>
+              </div>
+            </div>
+          `;
+
+          modal.show();
+        }
+
+        // Ensure download anchors get correct hrefs (for business docs block)
+        function ensureDownloadLinks() {
+          Object.keys(BUSINESS_PDFS).forEach(key => {
+            const el = document.getElementById('download-' + key);
+            if (el) {
+              el.href = BUSINESS_PDFS[key].filename;
+              el.setAttribute('download', '');
+            }
+          });
+        }
+
+        function openManagerModal(managerId) {
+    const modalEl = document.getElementById('managerModal');
+    if (!modalEl) {
+        console.error('Modal element with id "managerModal" not found.');
+        return;
+    }
+
+    const modal = new bootstrap.Modal(modalEl);
+    const modalTitle = document.getElementById('managerModalTitle');
+    const modalBody = document.getElementById('managerModalBody');
+
+    const managers = {
+        neeraj_pandey: {
+            image: 'img/neeraj_pandey.png',
+            name: 'Mr. Neeraj Pandey',
+            role: 'Director',
+            bio: 'Mr. Neeraj Pandey is a dynamic operations leader ensuring smooth execution, strong teamwork, and consistent growth across YUGPE. He focuses on efficiency, process optimization and delivering results.',
+            experience: '15+ years in Operations & Sales',
+            achievements: ['Built robust operations framework', 'Scaled distributor network across multiple states']
+        },
+        jugal_thakur: {
+            image: 'img/jugal_thakur.png',
+            name: 'Mr. Jugal Thakur',
+            role: 'Director',
+            bio: 'Mr. Jugal Thakur is a visionary leader driving YUGPE’s growth with clarity, commitment and strategic foresight. He shapes business strategy and partner engagement for sustainable expansion.',
+            experience: '18+ years in Business Development & Strategy',
+            achievements: ['Led national expansion initiatives', 'Forged key strategic partnerships']
+        },
+        kamal_kant: {
+            image: 'img/kamal_kant.png',
+            name: 'Mr. Kamal Kant',
+            role: 'Technical Head',
+            bio: 'Mr. Kamal Kant is a tech-driven innovator who leads YUGPE’s product and engineering teams, creating scalable platforms and secure solutions for millions of users.',
+            experience: '8+ years in Technology',
+            achievements: ['Architected core platform', 'Introduced secure payment integrations']
+        }
+    };
+
+    // fallback to neeraj if invalid id
+    const manager = managers[managerId] || managers.neeraj_pandey;
+
+    // set modal title
+    if (modalTitle) modalTitle.textContent = manager.name;
+
+    // build modal body html
+    if (modalBody) {
+        modalBody.innerHTML = `
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="manager-avatar mx-auto" style="
+                        width:140px; height:140px; border-radius:50%; overflow:hidden;
+                        border:3px solid #F85503; display:flex; align-items:center; justify-content:center; background:#fff;">
+                        <img src="${manager.image}" alt="${manager.name}" style="width:100%; height:100%; object-fit:cover; display:block;">
+                    </div>
+                    <h4 class="mt-3 mb-0">${manager.name}</h4>
+                    <p class="text-primary small mb-2">${manager.role}</p>
+                    <div class="social-links">
+                        <a href="#" class="me-2" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="me-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-2" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <h5 class="mb-2">About</h5>
+                    <p class="small text-muted mb-3">${manager.bio}</p>
+
+                    <h6 class="mb-1">Experience</h6>
+                    <p class="small text-muted mb-3">${manager.experience}</p>
+
+                    <h6 class="mb-1">Key Achievements</h6>
+                    <ul class="small">
+                        ${manager.achievements.map(a => `<li>${a}</li>`).join('')}
+                    </ul>
+
+                    <div class="d-flex gap-2 mt-4">
+                        <a href="tel:+91 99978 19929" class="btn btn-primary">
+                            <i class="fas fa-phone me-2"></i> Call
+                        </a>
+                        <a href="mailto:support@yugpe.com" class="btn btn-outline-primary">
+                            <i class="fas fa-envelope me-2"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    // finally show modal
+    modal.show();
+}
+
+
+        function openProductModal(productId) {
+  const modalEl = document.getElementById('productModal');
+  if (!modalEl) return console.error('productModal element not found in DOM');
+  const modal = new bootstrap.Modal(modalEl);
+  const modalTitle = document.getElementById('productModalTitle');
+  const modalBody = document.getElementById('productModalBody');
+
+  // Add all your products here. Make sure to include an "image" (relative path or full URL)
+  const products = {
+    artho_care: {
+      name: 'AushadhiPro Artho Care',
+      price: '₹ 699.00',
+      description: 'AUSHADHIPRO Ortho Care supports joint flexibility and relieves muscle stiffness — promoting natural strength and pain-free movement.',
+      features: ['100% Natural Ingredients', 'Clinically Tested', 'No Side Effects'],
+      ingredients: ['Surjan', 'Pipla Mool', 'Phool Supari', 'Amba Haldi'],
+      image: 'img/artho care.png' // <-- add actual image path
+    },
+    digestion_care: {
+      name: 'AushadhiPro Digestion Care',
+      price: '₹ 699.00',
+      description: 'Maintain a healthy gut with AUSHADHIPRO Digestion Care — a herbal blend that improves digestion, reduces acidity, and keeps your system naturally balanced. 🌿',
+      features: ['Aids digestion', 'Natural herbs', 'Gentle on stomach'],
+      ingredients: ['Ajwain', 'Saunf', 'Triphala', 'Amlaki', 'Haritaki'],
+      image: 'img/digestion care.png'
+    },
+    diabetes_care: {
+      name: 'AushadhiPro Diabetes Care',
+      price: '₹ 699.00',
+      description: 'Naturally manage your sugar levels with AUSHADHIPRO Diabetes Care — a trusted Ayurvedic solution that helps maintain balance, vitality, and long-term health. 🌿',
+      features: ['balanced blood sugar levels', 'Supports insulin activity', 'Reduces weakness', 'Safe for long-term use' ],
+      ingredients: ['Inderjo Kadwa', 'Badam Kadwa', 'Mamejwa', 'Chirata Nepali'],
+      image: 'img/diabetes care.png'
+    },
+    osteo_herbs: {
+      name: 'AushadhiPro Osteo Herbs',
+      price: '₹ 949.00',
+      description: 'Strengthen your bones and joints with AUSHADHIPRO Osteo Herb — a natural Ayurvedic blend for bone density, flexibility, and long-term mobility. 💪🌿',
+      features: ['Strengthens bones and joint structure', 'supports smooth movement', 'Provides long-lasting relief from joint discomfort', 'Rich in calcium-supporting herbal extracts' ],
+      ingredients: ['Ashwgandha', 'Satawari', 'Guduchi Ghana', 'Turmeric Extrect'],
+      image: 'img/osteoherb.png'
+    },
+    wellness_pro: {
+      name: 'AushadhiPro Wellness Pro',
+      price: '₹ 1449.00',
+      description: 'Revitalize your body and mind with AUSHADHIPRO Wellness Pro — a holistic Ayurvedic formula for energy, immunity, and total wellness. 🌿',
+      features: ['Boosts daily stamina, strength, and energy', 'Enhances immunity and overall wellness', 'Supports healthy vitality', 'Ideal for men & women for daily health support' ],
+      ingredients: ['Shudh Shilajit', 'Tribulus Terrestris Linn', 'Satawari', 'Kaunch Beej'],
+      image: 'img/wellness pro.png'
+    },
+    wellness_pro_prash: {
+      name: 'AushadhiPro Wellness Pro Prash',
+      price: '₹ 1599.00',
+      description: 'AUSHADHIPRO Wellness Pro Prash is a natural Ayurvedic tonic that boosts immunity, increases energy, and promotes overall wellness. A daily dose of strength for a healthy and active lifestyle. 💪🌿',
+      features: ['Boosts daily stamina, strength, and energy', 'Perfect for daily use to maintain overall wellness', 'Supports healthy vitality', 'Ideal for men & women for daily health support' ],
+      ingredients: ['Honey', 'Moti Pisti', 'Kesar', ' Salam Panja'],
+      image: 'img/wellness pro prash.png'
+    },
+    itching_relief: {
+      name: 'AushadhiPro Itching Relief Creeme',
+      price: '₹ 149.00',
+      description: 'Calm, cool, and heal your skin with AUSHADHIPRO Itching Relief Crème — enriched with natural herbs that provide quick relief from itching and irritation. 🌿✨',
+      features: ['Quick relief from itching, redness, and irritation', 'Soothes the skin', 'Reduces rashes and fungal discomfort', 'Non-greasy, fast-absorbing formulation' ],
+      ingredients: ['Sodil Biboras', 'Camphor', 'Beeswax', ' Musa saplentum linn'],
+      image: 'img/itching relief.png'
+    },
+    t_shirt: {
+      name: 'YUGPE T-shirt',
+      price: '₹ 599.00',
+      description: 'Comfortable, stylish, and premium-quality T-shirt designed for everyday wear with bold YUGPE branding.',
+      features: ['Premium quality, soft, breathable fabric', 'Stylish YUGPE branding', 'Comfortable for daily wear', 'Modern fit suitable for all age groups' ],
+      ingredients: ['Pure cotten', 'breathable fabric'],
+      image: 'img/yugpe t-shirt.png'
+    },
+    yugpe_bag: {
+      name: 'YUGPE Laptop Bag',
+      price: '₹ 1599.00',
+      description: 'Lightweight, durable, and spacious bag crafted for daily use, travel, and smart storage with a sleek YUGPE finish.',
+      features: ['Strong, lightweight, and durable material', 'Spacious design with organized compartments', 'Ideal for office, travel, and daily use', 'Stylish branding with premium finish' ],
+      ingredients: ['lather', 'Mattle zip & Hooks'],
+      image: 'img/yugpe bag.png'
+    },
+    // add more products similarly...
+  };
+
+  // get product or fallback to a default product (artho_care)
+  const product = products[productId] || products.artho_care;
+
+  // safe fallbacks
+  const features = Array.isArray(product.features) ? product.features : [];
+  const ingredients = Array.isArray(product.ingredients) ? product.ingredients : [];
+  const imgSrc = product.image || product.imageUrl || product.img || 'img/placeholder_product.png';
+
+  // set title
+  if (modalTitle) modalTitle.textContent = product.name || 'Product';
+
+  // build modal body
+  if (modalBody) {
+    modalBody.innerHTML = `
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div style="height:300px; border-radius:12px; overflow:hidden; display:flex; align-items:center; justify-content:center; background:var(--light-gray);">
+            <img
+              src="${imgSrc}"
+              alt="${(product.name || 'Product').replace(/"/g,'')}"
+              style="width:100%; height:100%; object-fit:cover; display:block;"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='img/placeholder_product.png';"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h3>${product.name || ''}</h3>
+          <div class="h4 text-primary mb-3">${product.price || ''}</div>
+          <p>${product.description || ''}</p>
+
+          <h5>Key Features</h5>
+          <ul>
+            ${features.map(f => `<li>${f}</li>`).join('')}
+          </ul>
+
+          <h5>Ingredients</h5>
+          <ul>
+            ${ingredients.map(i => `<li>${i}</li>`).join('')}
+          </ul>
+
+          <div class="d-flex gap-2 mt-4">
+            <button class="btn btn-primary flex-fill">Add to Cart</button>
+            <button class="btn btn-outline-primary">Download PDF</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  modal.show();
+}
+
+
+        function openJobModal(jobId) {
+            const modal = new bootstrap.Modal(document.getElementById('jobModal'));
+            const modalTitle = document.getElementById('jobModalTitle');
+            const modalBody = document.getElementById('jobModalBody');
+            
+            modalTitle.textContent = 'Join the YUGPE Team';
+            modalBody.innerHTML = `
+                <form id="jobApplicationForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="jobName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="jobName" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="jobEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="jobEmail" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="jobPhone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="jobPhone" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="jobExperience" class="form-label">Work Experience (Years)</label>
+                            <input type="number" class="form-control" id="jobExperience" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="jobResume" class="form-label">Upload Resume</label>
+                        <input type="file" class="form-control" id="jobResume" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="jobCoverLetter" class="form-label">Cover Letter</label>
+                        <textarea class="form-control" id="jobCoverLetter" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            `;
+            
+            modal.show();
+        }
+
+        // Form submissions
+function setupFormHandlers() {
+    // Contact form
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Success message
+            showSuccessMessage("Thank you for your message! We'll get back to you soon.");
+
+            // Reset form
+            contactForm.reset();
+        });
+    }
+            // Register form
+            const registerForm = document.getElementById('registerForm');
+            if (registerForm) {
+                registerForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const password = document.getElementById('regPassword').value;
+                    const confirmPassword = document.getElementById('regConfirmPassword').value;
+                    
+                    if (password !== confirmPassword) {
+                        showErrorMessage('Passwords do not match!');
+                        return;
+                    }
+                    
+                    showSuccessMessage('Account created successfully! Welcome to YUGPE.');
+                    showPage('home');
+                });
+            }
+
+            // Partnership, Testimonial & Job Forms
+document.addEventListener('submit', function (e) {
+    const form = e.target;
+
+    // Partnership Form
+    if (form.id === 'partnershipForm') {
+        e.preventDefault();
+
+        showSuccessMessage("Partnership inquiry submitted! We'll contact you soon.");
+
+        const modal = bootstrap.Modal.getInstance(document.getElementById('partnershipModal'));
+        if (modal) modal.hide();
+
+        form.reset();
+    }
+
+    // Testimonial Form
+    if (form.id === 'testimonialForm') {
+        e.preventDefault();
+
+        showSuccessMessage("Thank you for your testimonial! It will be reviewed and published soon.");
+
+        const modal = bootstrap.Modal.getInstance(document.getElementById('testimonialModal'));
+        if (modal) modal.hide();
+
+        form.reset();
+    }
+
+    // Job Application Form
+    if (form.id === 'jobApplicationForm') {
+        e.preventDefault();
+
+        showSuccessMessage("Application submitted successfully! We'll review it and get back to you.");
+
+        const modal = bootstrap.Modal.getInstance(document.getElementById('jobModal'));
+        if (modal) modal.hide();
+
+        form.reset();
+    }
+});
+
+        }
+
+        // Success/Error messages
+        function showSuccessMessage(message) {
+            showToast(message, 'success');
+        }
+
+        function showErrorMessage(message) {
+            showToast(message, 'error');
+        }
+
+        function showToast(message, type) {
+            const toast = document.createElement('div');
+            toast.className = `alert alert-${type === 'success' ? 'success' : 'danger'} position-fixed`;
+            toast.style.cssText = 'top: 100px; right: 20px; z-index: 9999; min-width: 300px;';
+            toast.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'} me-2"></i>
+                    ${message}
+                    <button type="button" class="btn-close ms-auto" onclick="this.parentElement.parentElement.remove()"></button>
+                </div>
+            `;
+            
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                if (toast.parentElement) {
+                    toast.remove();
+                }
+            }, 5000);
+        }
+
+        // Update content based on config
+        function onConfigChange(config) {
+            // Update navbar brand
+            const navbarBrand = document.querySelector('.navbar-brand');
+            if (navbarBrand) {
+                navbarBrand.textContent = config.company_name || defaultConfig.company_name;
+            }
+
+            // Update hero section
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) {
+                heroTitle.textContent = config.hero_title || defaultConfig.hero_title;
+            }
+
+            const heroSubtitle = document.querySelector('.hero-subtitle');
+            if (heroSubtitle) {
+                heroSubtitle.textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+            }
+
+            // Update contact information
+            const contactEmails = document.querySelectorAll('[data-contact="email"]');
+            contactEmails.forEach(el => {
+                el.textContent = config.contact_email || defaultConfig.contact_email;
+            });
+
+            const contactPhones = document.querySelectorAll('[data-contact="phone"]');
+            contactPhones.forEach(el => {
+                el.textContent = config.contact_phone || defaultConfig.contact_phone;
+            });
+
+            // Update footer company name
+            const footerTitle = document.querySelector('.footer h5');
+            if (footerTitle) {
+                footerTitle.textContent = config.company_name || defaultConfig.company_name;
+            }
+        }
+
+        // Initialize the application
+        function init() {
+            // Show home page by default
+            showPage('home');
+            
+            // Setup filters
+            setupDocumentFilters();
+            setupProductFilters();
+            
+            // Setup form handlers
+            setupFormHandlers();
+            
+            // Apply initial config
+            onConfigChange(defaultConfig);
+
+            // Ensure download links for business PDFs
+            ensureDownloadLinks();
+        }
+
+        // Element SDK integration
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig: defaultConfig,
+                onConfigChange: onConfigChange,
+                mapToCapabilities: (config) => ({
+                    recolorables: [],
+                    borderables: [],
+                    fontEditable: undefined,
+                    fontSizeable: undefined
+                }),
+                mapToEditPanelValues: (config) => new Map([
+                    ["company_name", config.company_name || defaultConfig.company_name],
+                    ["hero_title", config.hero_title || defaultConfig.hero_title],
+                    ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+                    ["contact_email", config.contact_email || defaultConfig.contact_email],
+                    ["contact_phone", config.contact_phone || defaultConfig.contact_phone]
+                ])
+            });
+        }
+
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99e564f804d2919e',t:'MTc2MzExMTYyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
